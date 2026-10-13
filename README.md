@@ -13,6 +13,11 @@
 
 可运行的产品演示见：[hiring-copilot](https://github.com/annawzhang/hiring-copilot) · [sales-ops-assistant](https://github.com/annawzhang/sales-ops-assistant) · [voc-insight-kit](https://github.com/annawzhang/voc-insight-kit) · [hris-prototype](https://github.com/annawzhang/hris-prototype)
 
+
+| Playbook | [people-stats](playbooks/people-stats.md) | 开实验前算样本量，跑完看 p 值 / 漏斗 CI / 周期 / 校准 |
+| Demo | [People Stats Kit](https://github.com/annawzhang/people-stats-kit) | 可运行报告 |
+| Demo | [VOC Voice Agent](https://github.com/annawzhang/voc-voice-agent) | 原声对话 Agent |
+
 ## 怎么用 Skill
 
 把 `skills/<name>` 复制到你的 Cursor Agent Skills 目录（或本机 `~/.cursor/skills/`），在对话里点名触发，例如：「按 hr-materials-audit 审核这批入职材料」。
