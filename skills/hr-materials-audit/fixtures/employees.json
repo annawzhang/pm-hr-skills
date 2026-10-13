@@ -1,0 +1,47 @@
+{
+  "employees": [
+    {
+      "emp_id": "E1001",
+      "name": "李明",
+      "gender": "男",
+      "dob": "1994-03-12",
+      "id_valid_from": "2018-03-12",
+      "id_valid_to": "2038-03-12",
+      "degree_level": "本科",
+      "degree_school": "示例大学",
+      "degree_major": "劳动与社会保障",
+      "company": "示例科技有限公司",
+      "title": "HRBP",
+      "contract_from": "2024-07-01",
+      "contract_to": "2027-06-30",
+      "probation": "3个月",
+      "ocr_fields": {
+        "id_card": { "name": "李明", "raw_text": "姓名李明\n性别男" },
+        "degree": { "name": "李明" },
+        "labor_contract": { "name": "李明" }
+      }
+    },
+    {
+      "emp_id": "E1002",
+      "name": "司马懿",
+      "dob": "2007-11-02",
+      "id_valid_to": "2022-01-01",
+      "ocr_fields": {
+        "id_card": { "name": "司马懿", "raw_text": "姓名司马懿\n佩戴眼镜" },
+        "degree": { "name": "司马懿" },
+        "labor_contract": { "name": "张三" }
+      }
+    },
+    {
+      "emp_id": "E1003",
+      "name": "王芳",
+      "dob": "1990-08-20",
+      "id_valid_to": "2035-08-20",
+      "ocr_fields": {
+        "id_card": { "name": "王芳", "raw_text": "姓名王芳" },
+        "degree": { "name": "王芳" },
+        "labor_contract": { "name": "王芳" }
+      }
+    }
+  ]
+}
