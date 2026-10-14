@@ -3,6 +3,11 @@
 **可公开、零密钥的 Cursor Agent Skill + SOP。**  
 把「减幻觉、安全治理、招聘、触达、VOC」等方法写成 Agent 能执行的说明；示例全部虚构。
 
+
+> **Copyright © 2026 张文婧 (Anna Zhang)** · [MIT License](./LICENSE) · [github.com/annawzhang](https://github.com/annawzhang)  
+> 欢迎学习与面试查阅；保留版权与许可声明。**禁止删除作者信息后冒充本人作品二次发表。** 公开内容为虚构/脱敏演示数据。
+
+
 > **安全承诺**：不含 Token / 内网地址 / 真实员工或客户数据。需要密钥的部署类仓库已设为 Private，不在本仓。
 
 ## Skills（可复制到 Cursor）
