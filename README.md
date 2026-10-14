@@ -12,19 +12,25 @@
 
 ## Skills（可复制到 Cursor）
 
-| Skill | 解决什么 | 路径 |
-|---|---|---|
-| **[减幻觉 · 引用落地](skills/citation-grounding/)** | 无引用不下结论；检索空则拒答 | `skills/citation-grounding/` |
-| **[安全治理 · 内容护栏](skills/content-safety-rails/)** | P0–P3 分级处置；输入/输出双侧检查 | `skills/content-safety-rails/` |
-| [结构化招聘](skills/structured-hiring/) | 评分卡 → 证据化初筛 → 独立反馈 → 校准 | `skills/structured-hiring/` |
-| [人力材料审核](skills/hr-materials-audit/) | 虚构 fixture + 5 条合规规则可跑 | `skills/hr-materials-audit/` |
+| Skill | 层 | 解决什么 | 路径 |
+|---|---|---|---|
+| **[减幻觉 · 引用落地](skills/citation-grounding/)** | L3/L2 | 无引用不下结论；检索空则拒答 | `skills/citation-grounding/` |
+| **[安全治理 · 内容护栏](skills/content-safety-rails/)** | L4/L2 | P0–P3 分级；输入/输出双侧检查 | `skills/content-safety-rails/` |
+| **[工具白名单](skills/tool-whitelist/)** | L1/L2 | 未授权工具一律拒绝 | `skills/tool-whitelist/` |
+| **[发布脱敏检查](skills/publish-desensitize/)** | L4 | 公开发布前扫手机号/密钥形态/内网 | `skills/publish-desensitize/` |
+| **[护栏评测](skills/agent-eval-rails/)** | L4 | 最小用例：该拒就拒、该引用就引用 | `skills/agent-eval-rails/` |
+| [结构化招聘](skills/structured-hiring/) | 业务 | 评分卡 → 证据化初筛 → 校准 | `skills/structured-hiring/` |
+| [人力材料审核](skills/hr-materials-audit/) | 业务 | 虚构 fixture + 合规规则可跑 | `skills/hr-materials-audit/` |
+
+分层建设地图：[playbooks/layer-build-map.md](playbooks/layer-build-map.md) · [手册 §12](https://annawzhang.github.io/people-product-handbook/sections/12-layer-build.html)
 
 ## Playbooks
 
 | Playbook | 一句话 |
 |---|---|
+| [layer-build-map](playbooks/layer-build-map.md) | L0–L4 还能公开建什么 |
 | [citation-grounding](playbooks/citation-grounding.md) | 无证据，不发言 |
-| [content-safety-rails](playbooks/content-safety-rails.md) | 分级处置 + 双侧扫描，密钥不进公开仓 |
+| [content-safety-rails](playbooks/content-safety-rails.md) | 分级处置 + 双侧扫描 |
 | [structured-hiring](playbooks/structured-hiring.md) | 结构化招聘 SOP |
 | [outreach-approval](playbooks/outreach-approval.md) | 预览 → 授权 → 群发 → 留痕 |
 | [voc-script-qa](playbooks/voc-script-qa.md) | 原声 → 话术 → 禁止话术检查 |
