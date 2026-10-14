@@ -1,35 +1,57 @@
 # PM / HR Skills & Playbooks
 
-**把实习里验证过的产品与运营方法，抽成可复用的 Cursor Agent Skill 和 Markdown Playbook。**  
-数据、接口、表格均为虚构示例；不含任何公司内部地址或真实员工信息。
+**可公开、零密钥的 Cursor Agent Skill + SOP。**  
+把「减幻觉、安全治理、招聘、触达、VOC」等方法写成 Agent 能执行的说明；示例全部虚构。
 
-| 类型 | 名称 | 一句话 |
+> **安全承诺**：不含 Token / 内网地址 / 真实员工或客户数据。需要密钥的部署类仓库已设为 Private，不在本仓。
+
+## Skills（可复制到 Cursor）
+
+| Skill | 解决什么 | 路径 |
 |---|---|---|
-| Skill | [人力运营材料审核](skills/hr-materials-audit/) | OCR/结构化字段 + 5 条合规规则 + 异常汇总（本地 fixture 可跑） |
-| Skill | [结构化招聘](skills/structured-hiring/) | 开岗评分卡 → 证据化初筛 → 独立反馈 → 校准复盘 |
-| Playbook | [structured-hiring](playbooks/structured-hiring.md) | 招聘流程 SOP（对齐 Greenhouse / Ashby 思路） |
-| Playbook | [outreach-approval](playbooks/outreach-approval.md) | 业务群触达：预览 → 授权 → 群发 → 留痕 |
-| Playbook | [voc-script-qa](playbooks/voc-script-qa.md) | 舆情洞察 → 话术 → 禁止话术检查 |
+| **[减幻觉 · 引用落地](skills/citation-grounding/)** | 无引用不下结论；检索空则拒答 | `skills/citation-grounding/` |
+| **[安全治理 · 内容护栏](skills/content-safety-rails/)** | P0–P3 分级处置；输入/输出双侧检查 | `skills/content-safety-rails/` |
+| [结构化招聘](skills/structured-hiring/) | 评分卡 → 证据化初筛 → 独立反馈 → 校准 | `skills/structured-hiring/` |
+| [人力材料审核](skills/hr-materials-audit/) | 虚构 fixture + 5 条合规规则可跑 | `skills/hr-materials-audit/` |
 
-可运行的产品演示见：[hiring-copilot](https://github.com/annawzhang/hiring-copilot) · [sales-ops-assistant](https://github.com/annawzhang/sales-ops-assistant) · [voc-insight-kit](https://github.com/annawzhang/voc-insight-kit) · [hris-prototype](https://github.com/annawzhang/hris-prototype)
+## Playbooks
 
+| Playbook | 一句话 |
+|---|---|
+| [citation-grounding](playbooks/citation-grounding.md) | 无证据，不发言 |
+| [content-safety-rails](playbooks/content-safety-rails.md) | 分级处置 + 双侧扫描，密钥不进公开仓 |
+| [structured-hiring](playbooks/structured-hiring.md) | 结构化招聘 SOP |
+| [outreach-approval](playbooks/outreach-approval.md) | 预览 → 授权 → 群发 → 留痕 |
+| [voc-script-qa](playbooks/voc-script-qa.md) | 原声 → 话术 → 禁止话术检查 |
+| [people-stats](playbooks/people-stats.md) | 样本量 / p 值 / 漏斗 CI / 校准 |
 
-| Playbook | [people-stats](playbooks/people-stats.md) | 开实验前算样本量，跑完看 p 值 / 漏斗 CI / 周期 / 校准 |
-| Demo | [People Stats Kit](https://github.com/annawzhang/people-stats-kit) | 可运行报告 |
-| Demo | [VOC Voice Agent](https://github.com/annawzhang/voc-voice-agent) | 原声对话 Agent |
+## 对齐的公开 Demo（均可点开）
 
-## 怎么用 Skill
+| Demo | 对应能力 |
+|---|---|
+| [VOC Voice Agent](https://annawzhang.github.io/voc-voice-agent/) | 减幻觉（强制 cite）+ 禁止话术 |
+| [Hiring Copilot](https://annawzhang.github.io/hiring-copilot/) / [Hiring Agent](https://annawzhang.github.io/hiring-agent/) | 证据化初筛 + 推进护栏 |
+| [Sales Ops Assistant](https://annawzhang.github.io/sales-ops-assistant/) | 触达授权护栏 |
+| [Enterprise AI Console](https://annawzhang.github.io/enterprise-ai-console/) | 工作台权限与治理叙事 |
+| [People Stats Kit](https://annawzhang.github.io/people-stats-kit/) | 可复现统计 |
 
-把 `skills/<name>` 复制到你的 Cursor Agent Skills 目录（或本机 `~/.cursor/skills/`），在对话里点名触发，例如：「按 hr-materials-audit 审核这批入职材料」。
+手册入口：[People Product Handbook · Skills](https://annawzhang.github.io/people-product-handbook/sections/07-skills.html)
 
-## 本地跑材料审核示例
+## 怎么用
+
+```bash
+# 复制到本机 Cursor Skills 目录后，对话里点名，例如：
+# 「按 citation-grounding 回答，没有引用就拒答」
+# 「按 content-safety-rails 给这份话术定级并给出处置」
+```
+
+材料审核可跑示例：
 
 ```bash
 cd skills/hr-materials-audit
-python3 scripts/audit_rules.py --input fixtures/employees.json
 python3 scripts/audit_rules.py --self-test
 ```
 
 ## 背景
 
-公开学习与求职作品。规则与流程来自作者在 HR / 销售策略产品实习中的方法抽象，**不是任何公司的内部系统或真实数据导出**。
+公开学习与面试作品。方法抽象自产品实习，**不是**任何公司的内部系统、词库或真实数据导出。
